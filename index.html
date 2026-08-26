@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>गण्डकी प्रदेश सरकार कर्मचारी तलब तथा कर क्याल्कुलेटर</title>
+    <title>गण्डकी प्रदेश र नेपाल सरकार नियम अनुसार तलब क्याल्कुलेटर</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -12,25 +12,24 @@
 </head>
 <body class="bg-slate-100 text-slate-800 min-h-screen pb-12">
 
-    <!-- मुख्य शीर्षक -->
     <header class="bg-blue-900 text-white py-6 shadow-md mb-8">
         <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
             <div>
-                <h1 class="text-2xl font-bold tracking-tight">गण्डकी प्रदेश सरकार कर्मचारी तलब तथा कर क्याल्कुलेटर</h1>
-                <p class="text-blue-200 text-sm mt-1">प्रदेश सरकारको नयाँ तलबमान, ग्रेड दर, सञ्चय कोष, CIT र आयकर नियममा आधारित</p>
+                <h1 class="text-2xl font-bold tracking-tight">गण्डकी प्रदेश सरकार तलब तथा कर क्याल्कुलेटर</h1>
+                <p class="text-blue-200 text-sm mt-1">नेपाल सरकार आयकर ऐन, सञ्चय कोष नियम र प्रदेश निजामती सेवा अनुसार</p>
             </div>
-            <span class="bg-blue-800 text-blue-100 text-xs px-3 py-1.5 rounded-full border border-blue-700 font-medium hidden sm:inline-block">मिति: २०८३/०५/०४ तलबमान</span>
+            <span class="bg-blue-800 text-blue-100 text-xs px-3 py-1.5 rounded-full border border-blue-700 font-medium hidden sm:inline-block">आ.व. २०८३/८४ स्वीकृत नियम</span>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
             
-            <!-- विवरण भर्ने फर्म (बायाँ तर्फ) -->
             <div class="lg:col-span-7 bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200">
+                
                 <h2 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2 border-b border-slate-100 pb-3">
                     <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                    कर्मचारी विवरण र बेसिक तलब
+                    पद, श्रेणी र आधारभूत तलब
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
@@ -49,108 +48,100 @@
                                 <option value="36192_1206">सहायक चौथो (शुरु: ३६,१९२ | ग्रेड दर: १,२०६)</option>
                                 <option value="30373_1012">सहायक तेस्रो (शुरु: ३०,३७३ | ग्रेड दर: १,०१२)</option>
                             </optgroup>
-                            <optgroup label="हेभी सवारी चालक">
-                                <option value="45717_1524">हेभी सवारी चालक - पाँचौं स्तर (शुरु: ४५,७१७ | ग्रेड दर: १,५२४)</option>
-                                <option value="43794_1460">हेभी सवारी चालक - चतुर्थ स्तर (शुरु: ४३,७९४ | ग्रेड दर: १,४६०)</option>
-                                <option value="41391_1380">हेभी सवारी चालक - तृतीय स्तर (शुरु: ४१,३९१ | ग्रेड दर: १,३८०)</option>
-                                <option value="36673_1222">हेभी सवारी चालक - द्वितीय स्तर (शुरु: ३६,६७३ | ग्रेड दर: १,२२२)</option>
-                                <option value="32701_1090">हेभी सवारी चालक - प्रथम स्तर (शुरु: ३२,७०१ | ग्रेड दर: १,०९०)</option>
-                            </optgroup>
-                            <optgroup label="हलुका सवारी चालक">
-                                <option value="43794_1460">हलुका सवारी चालक - पाँचौं स्तर (शुरु: ४३,७९४ | ग्रेड दर: १,४६०)</option>
-                                <option value="41391_1380">हलुका सवारी चालक - चतुर्थ स्तर (शुरु: ४१,३९१ | ग्रेड दर: १,३८०)</option>
-                                <option value="36673_1222">हलुका सवारी चालक - तृतीय स्तर (शुरु: ३६,६७३ | ग्रेड दर: १,२२२)</option>
-                                <option value="32701_1090">हलुका सवारी चालक - द्वितीय स्तर (शुरु: ३२,७०१ | ग्रेड दर: १,०९०)</option>
-                                <option value="30373_1012">हलुका सवारी चालक - प्रथम स्तर (शुरु: ३०,३७३ | ग्रेड दर: १,०१२)</option>
-                            </optgroup>
-                            <optgroup label="कार्यालय सहयोगी">
-                                <option value="36142_1205">कार्यालय सहयोगी - पाँचौं स्तर (शुरु: ३६,१४२ | ग्रेड दर: १,२०५)</option>
-                                <option value="32701_1090">कार्यालय सहयोगी - चतुर्थ स्तर (शुरु: ३२,७०१ | ग्रेड दर: १,०९०)</option>
-                                <option value="30373_1012">कार्यालय सहयोगी - तृतीय स्तर (शुरु: ३०,३७३ | ग्रेड दर: १,०१२)</option>
-                                <option value="28690_956">कार्यालय सहयोगी - द्वितीय स्तर (शुरु: २८,६९० | ग्रेड दर: ९५६)</option>
-                                <option value="27172_906">कार्यालय सहयोगी - प्रथम स्तर (शुरु: २७,१७२ | ग्रेड दर: ९०६)</option>
+                            <optgroup label="सवारी चालक र सहयोगी">
+                                <option value="45717_1524">हेभी सवारी चालक - पाँचौं (शुरु: ४५,७१७ | ग्रेड दर: १,५२४)</option>
+                                <option value="43794_1460">हलुका सवारी चालक - पाँचौं (शुरु: ४३,७९४ | ग्रेड दर: १,४६०)</option>
+                                <option value="36142_1205">कार्यालय सहयोगी - पाँचौं (शुरु: ३६,१४२ | ग्रेड दर: १,२०५)</option>
+                                <option value="27172_906">कार्यालय सहयोगी - प्रथम (शुरु: २७,१७२ | ग्रेड दर: ९०६)</option>
                             </optgroup>
                         </select>
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">शुरु तलबमान (मासिक रु.)</label>
-                        <input type="number" id="basicSalary" value="66539" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium">
+                        <input type="number" id="basicSalary" value="66539" oninput="calculateSalary()" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium">
                     </div>
 
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">ग्रेड संख्या</label>
-                        <input type="number" id="gradeCount" value="0" min="0" max="20" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">हालको ग्रेड संख्या</label>
+                        <input type="number" id="gradeCount" value="0" min="0" max="20" oninput="calculateSalary()" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">प्रति ग्रेड दर (रु.)</label>
-                        <input type="number" id="gradeRate" value="2218" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                        <input type="number" id="gradeRate" value="2218" oninput="calculateSalary()" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
 
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">महँगी भत्ता (मासिक रु.)</label>
-                        <input type="number" id="dearness" value="5000" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">महँगी भत्ता (सरकारी नियम: ५०००)</label>
+                        <input type="number" id="dearness" value="5000" oninput="calculateSalary()" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
                 </div>
 
                 <h2 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2 border-b border-slate-100 pb-3 pt-2">
                     <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    क्षेत्रगत सुविधा तथा कट्टीहरू
+                    भत्ता, बचत कट्टी र कर नियम
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+                    <div class="md:col-span-2 bg-blue-50 p-4 rounded-xl border border-blue-100 space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-sm text-blue-900">१०% कार्यसम्पादन प्रोत्साहन भत्ता (Incentive Allowance)</span>
+                            <input type="checkbox" id="enableIncentive" checked onchange="calculateSalary()" class="w-5 h-5 text-blue-600 rounded focus:ring-blue-500 cursor-pointer">
+                        </div>
+                        <div class="flex items-center gap-2 pt-2 border-t border-blue-200/60">
+                            <input type="checkbox" id="useDepreciationRule" onchange="calculateSalary()" class="w-4 h-4 text-blue-600 rounded">
+                            <label for="useDepreciationRule" class="text-xs text-blue-800 cursor-pointer">विशेष नियम: १६% कट्टी पछि बाँकी रकम (८४%) को १०% प्रोत्साहन भत्ता लिने</label>
+                        </div>
+                    </div>
+
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">दुर्गम क्षेत्र वर्ग</label>
-                        <select id="remoteCategory" class="w-full p-3 border border-slate-300 rounded-xl bg-slate-50 text-slate-800 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none">
-                            <option value="0">छैन / सुगम क्षेत्र</option>
-                            <option value="10000">'क' वर्ग (रु. १०,०००/महिना)</option>
-                            <option value="8000">'ख' वर्ग (रु. ८,०००/महिना)</option>
-                            <option value="6000">'ग' वर्ग (रु. ६,०००/महिना)</option>
-                            <option value="4000">'घ' वर्ग (रु. ४,०००/महिना)</option>
-                            <option value="2000">'ङ' वर्ग (रु. २,०००/महिना)</option>
-                        </select>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">कर्मचारी सञ्चय कोष (EPF)</label>
+                        <input type="text" value="१०% (सरकारी नियम अनुसार)" readonly class="w-full p-3 border border-slate-200 rounded-xl bg-slate-100 text-slate-600 font-medium">
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">नागरिक लगानी कोष (CIT / मासिक रु.)</label>
-                        <input type="number" id="cit" value="5000" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                        <input type="number" id="cit" value="5000" oninput="calculateSalary()" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">दुर्गम क्षेत्र भत्ता (मासिक)</label>
+                        <select id="remoteCategory" onchange="calculateSalary()" class="w-full p-3 border border-slate-300 rounded-xl bg-slate-50 text-slate-800 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option value="0">छैन / सुगम क्षेत्र</option>
+                            <option value="10000">'क' वर्ग (रु. १०,०००)</option>
+                            <option value="8000">'ख' वर्ग (रु. ८,०००)</option>
+                            <option value="6000">'ग' वर्ग (रु. ६,०००)</option>
+                            <option value="4000">'घ' वर्ग (रु. ४,०००)</option>
+                            <option value="2000">'ङ' वर्ग (रु. २,०००)</option>
+                        </select>
                     </div>
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">वार्षिक जीवन बीमा प्रिमियम (रु.)</label>
-                        <input type="number" id="insurance" value="40000" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                        <input type="number" id="insurance" value="40000" oninput="calculateSalary()" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                         <p class="text-[11px] text-slate-400 mt-1">अधिकतम रु. ४०,००० सम्म कर छुट पाइन्छ</p>
                     </div>
 
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">वैवाहिक स्थिति (कर गणनाका लागि)</label>
-                        <select id="maritalStatus" class="w-full p-3 border border-slate-300 rounded-xl bg-slate-50 text-slate-800 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none">
-                            <option value="unmarried">अविवाहित (Single)</option>
-                            <option value="married">विवाहित (Couple)</option>
+                    <div class="md:col-span-2">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">वैवाहिक स्थिति (आयकर गणनाका लागि)</label>
+                        <select id="maritalStatus" onchange="calculateSalary()" class="w-full p-3 border border-slate-300 rounded-xl bg-slate-50 text-slate-800 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option value="unmarried">अविवाहित (Single - पहिलो रु. ५ लाख सम्म १% सामाजिक सुरक्षा कर)</option>
+                            <option value="married">विवाहित (Couple - पहिलो रु. ६ लाख सम्म १% सामाजिक सुरक्षा कर)</option>
                         </select>
-                    </div>
-
-                    <div class="md:col-span-2 mt-2">
-                        <button onclick="calculateSalary()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-6 rounded-xl transition shadow-lg shadow-blue-600/20 cursor-pointer">
-                            हिसाब गर्नुहोस्
-                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- परिणाम प्रदर्शन (दायाँ तर्फ) -->
             <div class="lg:col-span-5 flex flex-col gap-6">
                 
-                <!-- बैंकमा आउने मुख्य रकम -->
                 <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white p-6 md:p-8 rounded-2xl shadow-xl relative overflow-hidden">
                     <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-blue-500/10 rounded-full blur-2xl"></div>
-                    <p class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-1">खूद मासिक घर लैजाने तलब (Take-Home Pay)</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-1">बैंकमा जम्मा हुने खूद मासिक तलब (Take-Home Pay)</p>
                     <h3 id="dashNetMonthly" class="text-3xl md:text-4xl font-extrabold text-white tracking-tight my-2">रु. ०</h3>
-                    <p class="text-xs text-slate-400 border-t border-slate-800 pt-3 mt-3">सबै कर, सञ्चय कोष र CIT कट्टी पछि बैंक खातामा जम्मा हुने रकम।</p>
+                    <p class="text-xs text-slate-400 border-t border-slate-800 pt-3 mt-3">सबै कर, सञ्चय कोष र CIT कट्टी पछिको मासिक खूद रकम।</p>
                 </div>
 
-                <!-- संक्षिप्त विवरण -->
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200">
                         <p class="text-xs font-semibold uppercase text-slate-400">कुल मासिक आम्दानी</p>
@@ -162,40 +153,39 @@
                     </div>
                 </div>
 
-                <!-- विस्तृत वार्षिक तालिका -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex-1">
-                    <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b border-slate-100 pb-2">वार्षिक हिसाब विवरण</h3>
+                    <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b border-slate-100 pb-2">वार्षिक हिसाब र सरकारी कट्टी विवरण</h3>
                     
                     <div class="space-y-3 text-sm">
                         <div class="flex justify-between text-slate-600">
-                            <span>वार्षिक कुल बेसिक (ग्रेड सहित):</span>
+                            <span>वार्षिक कुल बेसिक (१२ महिना):</span>
                             <span id="tabBasicAnnual" class="font-medium text-slate-900">रु. ०</span>
                         </div>
                         <div class="flex justify-between text-slate-600">
-                            <span>दशैं खर्च (१ महिना बेसिक):</span>
+                            <span>दशैं खर्च (१ महिना बेसिक बराबर):</span>
                             <span id="tabBonus" class="font-medium text-slate-900">रु. ०</span>
                         </div>
-                        <div class="flex justify-between text-slate-600">
-                            <span>वार्षिक कुल भत्ताहरू:</span>
-                            <span id="tabAllowances" class="font-medium text-slate-900">रु. ०</span>
+                        <div class="flex justify-between text-slate-600 text-emerald-700 font-medium">
+                            <span>मासिक प्रोत्साहन भत्ता:</span>
+                            <span id="tabIncentiveMonthly">रु. ०</span>
                         </div>
                         <div class="flex justify-between text-slate-900 font-bold border-t border-slate-100 pt-2">
                             <span>कुल वार्षिक आम्दानी (Gross):</span>
                             <span id="tabGrossAnnual" class="text-blue-600">रु. ०</span>
                         </div>
                         
-                        <div class="border-t border-slate-100 my-2"></div>
+                        <div class="border-t border-slate-200 my-2"></div>
 
                         <div class="flex justify-between text-slate-600">
-                            <span>सञ्चय कोष कट्टी (१०%):</span>
+                            <span>सञ्चय कोष कट्टी (EPF - १०%):</span>
                             <span id="tabEpf" class="font-medium text-slate-900">रु. ०</span>
                         </div>
                         <div class="flex justify-between text-slate-600">
-                            <span>वार्षिक CIT कट्टी:</span>
+                            <span>नागरिक लगानी कोष (CIT):</span>
                             <span id="tabCit" class="font-medium text-slate-900">रु. ०</span>
                         </div>
                         <div class="flex justify-between text-slate-600">
-                            <span>बीमा कर छुट कट्टी:</span>
+                            <span>जीवन बीमा कर छुट कट्टी:</span>
                             <span id="tabInsurance" class="font-medium text-emerald-600">- रु. ०</span>
                         </div>
                         <div class="flex justify-between text-slate-600">
@@ -235,42 +225,52 @@
             const citMonthly = parseFloat(document.getElementById('cit').value) || 0;
             const insuranceAnnual = parseFloat(document.getElementById('insurance').value) || 0;
             const isMarried = document.getElementById('maritalStatus').value === 'married';
+            const enableIncentive = document.getElementById('enableIncentive').checked;
+            const useDepreciation = document.getElementById('useDepreciationRule').checked;
 
-            // ग्रेड सहितको मासिक बेसिक तलब
+            // १. बेसिक तलब
             const totalMonthlyBasic = baseSalary + (gradeCount * gradeRate);
+
+            // २. १०% प्रोत्साहन भत्ता गणना
+            let monthlyIncentive = 0;
+            if (enableIncentive) {
+                if (useDepreciation) {
+                    monthlyIncentive = (totalMonthlyBasic * 0.84) * 0.10; // १६% कट्टी पछिको ८४% को १०%
+                } else {
+                    monthlyIncentive = totalMonthlyBasic * 0.10; // प्रत्यक्ष १०%
+                }
+            }
             
-            // कुल मासिक आम्दानी
-            const totalMonthlyAllowances = dearness + remote;
+            const totalMonthlyAllowances = dearness + remote + monthlyIncentive;
             const monthlyGross = totalMonthlyBasic + totalMonthlyAllowances;
 
-            // वार्षिक कुल रकम (१२ महिना + १ महिना दशैं खर्च)
+            // ३. वार्षिक कुल आम्दानी (१२ महिना तलब + १ महिना दशैं खर्च)
             const annualBasic = totalMonthlyBasic * 12;
             const dashainBonus = totalMonthlyBasic;
             const annualAllowances = totalMonthlyAllowances * 12;
             const annualGross = annualBasic + dashainBonus + annualAllowances;
 
-            // कट्टी र कर छुट सुविधाहरू
-            const annualEpf = annualBasic * 0.10; // १०% कर्मचारी सञ्चय कोष
+            // ४. सञ्चय कोष र CIT कट्टी
+            const monthlyEpf = totalMonthlyBasic * 0.10; // निजामती नियम अनुसार १०%
+            const annualEpf = monthlyEpf * 12;
             const annualCit = citMonthly * 12;
-            
-            // सञ्चय कोष र CIT को अधिकतम कर छुट सीमा
-            const totalRetirement = annualEpf + annualCit;
-            const maxRetirementExemption = Math.min(annualGross / 3, 300000);
-            const allowableRetirementDeduction = Math.min(totalRetirement, maxRetirementExemption);
+            const totalAnnualRetirement = annualEpf + annualCit;
 
-            // जीवन बीमा कर छुट सीमा (अधिकतम रु ४०,०००)
-            const allowableInsuranceDeduction = Math.min(insuranceAnnual, 40000);
+            // ५. कर छुट सुविधाहरू (आयकर ऐन अनुसार)
+            const maxRetirementExemption = Math.min(annualGross / 3, 300000); // १/३ वा रु ३ लाख
+            const allowableRetirementDeduction = Math.min(totalAnnualRetirement, maxRetirementExemption);
+            const allowableInsuranceDeduction = Math.min(insuranceAnnual, 40000); // अधिकतम रु ४०,०००
 
-            // कर योग्य आम्दानी (Taxable Income)
+            // ६. कर योग्य आम्दानी (Taxable Income)
             let taxableIncome = annualGross - allowableRetirementDeduction - allowableInsuranceDeduction;
             if(taxableIncome < 0) taxableIncome = 0;
 
-            // आयकर गणना
+            // ७. आय कर (Slab Rates)
             let annualTax = 0;
             const firstSlabLimit = isMarried ? 600000 : 500000;
 
             if (taxableIncome <= firstSlabLimit) {
-                annualTax = taxableIncome * 0.01;
+                annualTax = taxableIncome * 0.01; // १% सामाजिक सुरक्षा कर
             } else {
                 annualTax = firstSlabLimit * 0.01;
                 let remaining = taxableIncome - firstSlabLimit;
@@ -295,28 +295,27 @@
                 }
 
                 if (remaining > 0) {
-                    annualTax += remaining * 0.36;
+                    annualTax += remaining * 0.36; // ३६% उच्चतम दर
                 }
             }
 
-            // मासिक हिसाब
+            // ८. मासिक नतिजा
             const monthlyTax = annualTax / 12;
-            const monthlyEpf = totalMonthlyBasic * 0.10;
             const monthlyDeductions = monthlyEpf + citMonthly + monthlyTax;
             const netMonthlyTakeHome = monthlyGross - monthlyDeductions;
             const netAnnualTakeHome = annualGross - (annualEpf + annualCit + annualTax);
 
-            // रकम ढाँचा मिलाउने helper function
+            // Helper function
             const fmt = (num) => 'रु. ' + Math.round(num).toLocaleString('ne-NP');
 
-            // HTML मा नतिजा देखाउने
+            // Render Output
             document.getElementById('dashNetMonthly').innerText = fmt(netMonthlyTakeHome);
             document.getElementById('dashGrossMonthly').innerText = fmt(monthlyGross);
             document.getElementById('dashDeductionsMonthly').innerText = fmt(monthlyDeductions);
 
             document.getElementById('tabBasicAnnual').innerText = fmt(annualBasic);
             document.getElementById('tabBonus').innerText = fmt(dashainBonus);
-            document.getElementById('tabAllowances').innerText = fmt(annualAllowances);
+            document.getElementById('tabIncentiveMonthly').innerText = fmt(monthlyIncentive);
             document.getElementById('tabGrossAnnual').innerText = fmt(annualGross);
 
             document.getElementById('tabEpf').innerText = fmt(annualEpf);
