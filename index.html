@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>नेपाल सरकारी कर्मचारी तलब तथा कर क्याल्कुलेटर</title>
+    <title>गण्डकी प्रदेश सरकार कर्मचारी तलब तथा कर क्याल्कुलेटर</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -16,10 +16,10 @@
     <header class="bg-blue-900 text-white py-6 shadow-md mb-8">
         <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
             <div>
-                <h1 class="text-2xl font-bold tracking-tight">नेपाल सरकार कर्मचारी तलब तथा कर क्याल्कुलेटर</h1>
-                <p class="text-blue-200 text-sm mt-1">निजामती सेवाको तलबमान, भत्ता, सञ्चय कोष, CIT र आयकर नियममा आधारित</p>
+                <h1 class="text-2xl font-bold tracking-tight">गण्डकी प्रदेश सरकार कर्मचारी तलब तथा कर क्याल्कुलेटर</h1>
+                <p class="text-blue-200 text-sm mt-1">प्रदेश सरकारको नयाँ तलबमान, ग्रेड दर, सञ्चय कोष, CIT र आयकर नियममा आधारित</p>
             </div>
-            <span class="bg-blue-800 text-blue-100 text-xs px-3 py-1.5 rounded-full border border-blue-700 font-medium hidden sm:inline-block">आ.व. २०८१/८२ - २०८३/८४</span>
+            <span class="bg-blue-800 text-blue-100 text-xs px-3 py-1.5 rounded-full border border-blue-700 font-medium hidden sm:inline-block">मिति: २०८३/०५/०४ तलबमान</span>
         </div>
     </header>
 
@@ -34,24 +34,48 @@
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">पद / तह छान्नुहोस्</label>
+                    <div class="md:col-span-2">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">पद / श्रेणी छान्नुहोस्</label>
                         <select id="rankPreset" onchange="applyPreset()" class="w-full p-3 border border-slate-300 rounded-xl bg-slate-50 text-slate-800 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none transition">
-                            <option value="custom">आफैं टाइप गर्ने (कस्टम)</option>
-                            <option value="77211">मुख्य सचिव</option>
-                            <option value="72082">सचिव</option>
-                            <option value="56787">सह-सचिव</option>
-                            <option value="48737">उप-सचिव</option>
-                            <option value="43689" selected>शाखा अधिकृत</option>
-                            <option value="34730">नायब सुब्बा</option>
-                            <option value="32902">खरिदार</option>
-                            <option value="26082">कार्यालय सहयोगी</option>
+                            <option value="custom">-- आफैं टाइप गर्ने (कस्टम) --</option>
+                            <optgroup label="अधिकृत र सहायक तह">
+                                <option value="66539_2218">अधिकृत एघारौं (शुरु: ६६,५३९ | ग्रेड दर: २,२१८)</option>
+                                <option value="62466_2082">अधिकृत दशौं (शुरु: ६२,४६६ | ग्रेड दर: २,०८२)</option>
+                                <option value="57659_1922">अधिकृत नवौं (शुरु: ५७,६५९ | ग्रेड दर: १,९२२)</option>
+                                <option value="53611_1787">अधिकृत आठौं (शुरु: ५३,६११ | ग्रेड दर: १,७८७)</option>
+                                <option value="50436_1681">अधिकृत सातौं (शुरु: ५०,४३६ | ग्रेड दर: १,६८१)</option>
+                                <option value="48058_1602">अधिकृत छैटौं (शुरु: ४८,०५८ | ग्रेड दर: १,६०२)</option>
+                                <option value="38203_1273">सहायक पाँचौं (शुरु: ३८,२०३ | ग्रेड दर: १,२७३)</option>
+                                <option value="36192_1206">सहायक चौथो (शुरु: ३६,१९२ | ग्रेड दर: १,२०६)</option>
+                                <option value="30373_1012">सहायक तेस्रो (शुरु: ३०,३७३ | ग्रेड दर: १,०१२)</option>
+                            </optgroup>
+                            <optgroup label="हेभी सवारी चालक">
+                                <option value="45717_1524">हेभी सवारी चालक - पाँचौं स्तर (शुरु: ४५,७१७ | ग्रेड दर: १,५२४)</option>
+                                <option value="43794_1460">हेभी सवारी चालक - चतुर्थ स्तर (शुरु: ४३,७९४ | ग्रेड दर: १,४६०)</option>
+                                <option value="41391_1380">हेभी सवारी चालक - तृतीय स्तर (शुरु: ४१,३९१ | ग्रेड दर: १,३८०)</option>
+                                <option value="36673_1222">हेभी सवारी चालक - द्वितीय स्तर (शुरु: ३६,६७३ | ग्रेड दर: १,२२२)</option>
+                                <option value="32701_1090">हेभी सवारी चालक - प्रथम स्तर (शुरु: ३२,७०१ | ग्रेड दर: १,०९०)</option>
+                            </optgroup>
+                            <optgroup label="हलुका सवारी चालक">
+                                <option value="43794_1460">हलुका सवारी चालक - पाँचौं स्तर (शुरु: ४३,७९४ | ग्रेड दर: १,४६०)</option>
+                                <option value="41391_1380">हलुका सवारी चालक - चतुर्थ स्तर (शुरु: ४१,३९१ | ग्रेड दर: १,३८०)</option>
+                                <option value="36673_1222">हलुका सवारी चालक - तृतीय स्तर (शुरु: ३६,६७३ | ग्रेड दर: १,२२२)</option>
+                                <option value="32701_1090">हलुका सवारी चालक - द्वितीय स्तर (शुरु: ३२,७०१ | ग्रेड दर: १,०९०)</option>
+                                <option value="30373_1012">हलुका सवारी चालक - प्रथम स्तर (शुरु: ३०,३७३ | ग्रेड दर: १,०१२)</option>
+                            </optgroup>
+                            <optgroup label="कार्यालय सहयोगी">
+                                <option value="36142_1205">कार्यालय सहयोगी - पाँचौं स्तर (शुरु: ३६,१४२ | ग्रेड दर: १,२०५)</option>
+                                <option value="32701_1090">कार्यालय सहयोगी - चतुर्थ स्तर (शुरु: ३२,७०१ | ग्रेड दर: १,०९०)</option>
+                                <option value="30373_1012">कार्यालय सहयोगी - तृतीय स्तर (शुरु: ३०,३७३ | ग्रेड दर: १,०१२)</option>
+                                <option value="28690_956">कार्यालय सहयोगी - द्वितीय स्तर (शुरु: २८,६९० | ग्रेड दर: ९५६)</option>
+                                <option value="27172_906">कार्यालय सहयोगी - प्रथम स्तर (शुरु: २७,१७२ | ग्रेड दर: ९०६)</option>
+                            </optgroup>
                         </select>
                     </div>
 
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">शुरुवाती बेसिक तलब (मासिक रु.)</label>
-                        <input type="number" id="basicSalary" value="43689" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">शुरु तलबमान (मासिक रु.)</label>
+                        <input type="number" id="basicSalary" value="66539" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium">
                     </div>
 
                     <div>
@@ -61,25 +85,25 @@
 
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">प्रति ग्रेड दर (रु.)</label>
-                        <input type="number" id="gradeRate" value="1456" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                        <input type="number" id="gradeRate" value="2218" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">महँगी भत्ता (मासिक रु.)</label>
+                        <input type="number" id="dearness" value="5000" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
                 </div>
 
                 <h2 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2 border-b border-slate-100 pb-3 pt-2">
                     <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    भत्ता तथा क्षेत्रगत सुविधाहरू
+                    क्षेत्रगत सुविधा तथा कट्टीहरू
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">महँगी भत्ता (मासिक रु.)</label>
-                        <input type="number" id="dearness" value="5000" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                    </div>
-
-                    <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">दुर्गम क्षेत्र वर्ग</label>
                         <select id="remoteCategory" class="w-full p-3 border border-slate-300 rounded-xl bg-slate-50 text-slate-800 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none">
-                            <option value="0">छैन / काठमाडौं उपत्यका</option>
+                            <option value="0">छैन / सुगम क्षेत्र</option>
                             <option value="10000">'क' वर्ग (रु. १०,०००/महिना)</option>
                             <option value="8000">'ख' वर्ग (रु. ८,०००/महिना)</option>
                             <option value="6000">'ग' वर्ग (रु. ६,०००/महिना)</option>
@@ -87,14 +111,7 @@
                             <option value="2000">'ङ' वर्ग (रु. २,०००/महिना)</option>
                         </select>
                     </div>
-                </div>
 
-                <h2 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2 border-b border-slate-100 pb-3 pt-2">
-                    <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21 shall-2-2 2-2M3 3l18 18"></path></svg>
-                    कट्टी तथा कर छुट सुविधाहरू
-                </h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">नागरिक लगानी कोष (CIT / मासिक रु.)</label>
                         <input type="number" id="cit" value="5000" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
@@ -114,7 +131,7 @@
                         </select>
                     </div>
 
-                    <div class="flex items-end">
+                    <div class="md:col-span-2 mt-2">
                         <button onclick="calculateSalary()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-6 rounded-xl transition shadow-lg shadow-blue-600/20 cursor-pointer">
                             हिसाब गर्नुहोस्
                         </button>
@@ -198,23 +215,12 @@
     </main>
 
     <script>
-        // निजामती कर्मचारीहरूको पद अनुसारको तलब र ग्रेड दर
-        const presets = {
-            "77211": { basic: 77211, gradeRate: 2574 },
-            "72082": { basic: 72082, gradeRate: 2403 },
-            "56787": { basic: 56787, gradeRate: 1893 },
-            "48737": { basic: 48737, gradeRate: 1625 },
-            "43689": { basic: 43689, gradeRate: 1456 },
-            "34730": { basic: 34730, gradeRate: 1158 },
-            "32902": { basic: 32902, gradeRate: 1097 },
-            "26082": { basic: 26082, gradeRate: 869 }
-        };
-
         function applyPreset() {
             const val = document.getElementById('rankPreset').value;
             if(val !== 'custom') {
-                document.getElementById('basicSalary').value = presets[val].basic;
-                document.getElementById('gradeRate').value = presets[val].gradeRate;
+                const [basic, gradeRate] = val.split('_');
+                document.getElementById('basicSalary').value = basic;
+                document.getElementById('gradeRate').value = gradeRate;
             }
             calculateSalary();
         }
@@ -247,7 +253,7 @@
             const annualEpf = annualBasic * 0.10; // १०% कर्मचारी सञ्चय कोष
             const annualCit = citMonthly * 12;
             
-            // सञ्चय कोष र CIT को अधिकतम कर छुट सीमा (कुल आम्दानीको १/३ वा रु ३,००,००० मध्ये सानो रकम)
+            // सञ्चय कोष र CIT को अधिकतम कर छुट सीमा
             const totalRetirement = annualEpf + annualCit;
             const maxRetirementExemption = Math.min(annualGross / 3, 300000);
             const allowableRetirementDeduction = Math.min(totalRetirement, maxRetirementExemption);
@@ -259,17 +265,16 @@
             let taxableIncome = annualGross - allowableRetirementDeduction - allowableInsuranceDeduction;
             if(taxableIncome < 0) taxableIncome = 0;
 
-            // आयकर गणना (Nepal Progressive Income Tax Slabs)
+            // आयकर गणना
             let annualTax = 0;
             const firstSlabLimit = isMarried ? 600000 : 500000;
 
             if (taxableIncome <= firstSlabLimit) {
-                annualTax = taxableIncome * 0.01; // १% सामाजिक सुरक्षा कर
+                annualTax = taxableIncome * 0.01;
             } else {
                 annualTax = firstSlabLimit * 0.01;
                 let remaining = taxableIncome - firstSlabLimit;
 
-                // १०% कर स्ल्याब (अविवाहितको लागि थप २ लाख, विवाहितको लागि थप १ लाख)
                 let slab2 = isMarried ? 100000 : 200000;
                 if (remaining > 0) {
                     let taxableAt10 = Math.min(remaining, slab2);
@@ -277,21 +282,18 @@
                     remaining -= taxableAt10;
                 }
 
-                // २०% कर स्ल्याब (थप ३ लाख)
                 if (remaining > 0) {
                     let taxableAt20 = Math.min(remaining, 300000);
                     annualTax += taxableAt20 * 0.20;
                     remaining -= taxableAt20;
                 }
 
-                // ३०% कर स्ल्याब (थप १० लाख)
                 if (remaining > 0) {
                     let taxableAt30 = Math.min(remaining, 1000000);
                     annualTax += taxableAt30 * 0.30;
                     remaining -= taxableAt30;
                 }
 
-                // ३६% कर स्ल्याब (रु २० लाख भन्दा माथि)
                 if (remaining > 0) {
                     annualTax += remaining * 0.36;
                 }
@@ -324,7 +326,6 @@
             document.getElementById('tabNetAnnual').innerText = fmt(netAnnualTakeHome);
         }
 
-        // पेज लोड हुँदा पहिलो पटक हिसाब गर्ने
         window.onload = calculateSalary;
     </script>
 </body>
